@@ -1,0 +1,10 @@
+.columnForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    label input{
+        margin-left: 1rem;
+    }
+}
