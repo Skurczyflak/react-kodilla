@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Favorite from './components/Favorite/Favorite';
 import Page404 from './components/Page404/Page404';
 import { Routes, Route } from 'react-router-dom';
+import List from './components/List/List';
 const App = () => {
   return (
     <section>
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/favorite" element={<Favorite />} />
           <Route path="*" element={<Page404 />} />
+          <Route path="/list/:listId" element={<List />} />
         </Routes>
       </Container>
     </section>
