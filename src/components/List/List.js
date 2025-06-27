@@ -10,7 +10,7 @@ const List = () => {
   const { listId } = useParams();
   const listData = useSelector((state) => getListById(state, listId));
   const columns = useSelector((state) => getColumnsByList(state, listId));
-  if (!listData) return <Navigate to="/" />;
+  if (!listData) return <Navigate to="/" />
   return (
     <div className={styles.list}>
       <header className={styles.header}>
